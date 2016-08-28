@@ -9,7 +9,7 @@ public class SampleLog4j {
 		// TODO Auto-generated constructor stub
 	}
 	@Test
-	public void HelloWorldLog4j()
+	public void Log4jHelloWorldExamlpe()
 	{
 		logger.info("Welcome to Log4j world!");
 		logger.debug("Log4j Hello World Debug message");
