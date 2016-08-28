@@ -13,7 +13,8 @@
 		</groups>
  -->    <classes>
       <!-- <class name="com.sample.selenium.test.SampleClassTest"/> -->
-            <class name="com.sample.selenium.test.SampleClassTest2"/>
+            <class name="com.sample.selenium.test.SampleClassTest"/>
+            <class name= "com.sample.selenium.test.SampleLog4j"/>
       
     </classes>
   </test> <!-- Test -->
