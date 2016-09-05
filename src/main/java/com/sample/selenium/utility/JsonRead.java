@@ -12,8 +12,7 @@ import org.json.simple.parser.ParseException;
 import com.sample.selenium.constants.Setup;
 
 public class JsonRead implements Setup {
-	static Logger log = Logger.getLogger(Log4jExample.class);
-
+	static Logger log = Logger.getLogger(JsonRead.class);
 
 	public JSONObject readJSON(String sJsonFile) {
 
