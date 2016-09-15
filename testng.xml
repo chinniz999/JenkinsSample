@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Jenkins Sample" parallel="tests" thread-count="3">
+<suite name="Jenkins Sample" parallel="tests" thread-count="1">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -10,11 +10,10 @@
 
 		<!-- <groups> <run> <include name="Add" /> </run> </groups> -->
 		<classes>
-			<class naem="com.sample.selenium.test.SamsungGelexyJ7">
-				<!-- <class name="com.sample.selenium.test.SampleClassTest"/> -->
-
-				<!-- <class name="com.sample.selenium.test.SampleClassTest"/> <class 
-					name= "com.sample.selenium.test.SampleLog4j"/> -->
+			<class name="com.sample.selenium.test.GoogleSearch" />
+			<class name="com.sample.selenium.test.SamsungGelexyJ7" />
+			<class name="com.sample.selenium.test.SampleClassTest" />
+			<class name="com.sample.selenium.test.SampleLog4j" />
 
 
 		</classes>

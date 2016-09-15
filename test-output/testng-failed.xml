@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sample.selenium.test.SamsungGelexyJ7">
+      <class name="com.sample.selenium.test.SampleTestCase">
         <methods>
           <include name="testCase01"/>
         </methods>
-      </class> <!-- com.sample.selenium.test.SamsungGelexyJ7 -->
+      </class> <!-- com.sample.selenium.test.SampleTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

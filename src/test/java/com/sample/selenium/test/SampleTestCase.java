@@ -14,7 +14,7 @@ public class SampleTestCase {
 	  driver.get("http://www.flipkart.com");
 	  driver.findElement(By.name("q")).sendKeys("dell laptops windows 10");
 	  driver.findElement(By.xpath("//button[@type='submit']")).click();
-	  Thread.sleep(5000);
+	 // Thread.sleep(5000);
 
 	  By rating = By.xpath("//span[text()='1843']/../../a/../div/span/div[text()='3.7']");
 	  String ratingtext=driver.findElement(rating).getText();

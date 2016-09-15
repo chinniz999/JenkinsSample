@@ -1,75 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="316806" started-at="2016-09-14T07:50:40Z" finished-at="2016-09-14T07:55:56Z">
+  <suite name="Default suite" duration-ms="54756" started-at="2016-09-15T09:16:01Z" finished-at="2016-09-15T09:16:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="316806" started-at="2016-09-14T07:50:40Z" finished-at="2016-09-14T07:55:56Z">
-      <class name="com.sample.selenium.test.SamsungGelexyJ7">
-        <test-method status="FAIL" signature="testCase01()[pri:0, instance:com.sample.selenium.test.SamsungGelexyJ7@2b98378d]" name="testCase01" duration-ms="316719" started-at="2016-09-14T13:20:40Z" finished-at="2016-09-14T13:25:56Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 296.285
-  (Session info: chrome=52.0.2743.116)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 312.04 seconds
-Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
-System info: host: 'srinivas', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\WINDOWS\TEMP\scoped_dir8468_13535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.116, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 93e3e6f537461cbc4580b73c9278b4df]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 296.285
-  (Session info: chrome=52.0.2743.116)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 312.04 seconds
-Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
-System info: host: 'srinivas', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\WINDOWS\TEMP\scoped_dir8468_13535}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=52.0.2743.116, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 93e3e6f537461cbc4580b73c9278b4df
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.sample.selenium.test.SamsungGelexyJ7.testCase01(SamsungGelexyJ7.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+    <test name="Default test" duration-ms="54756" started-at="2016-09-15T09:16:01Z" finished-at="2016-09-15T09:16:56Z">
+      <class name="com.sample.selenium.test.SampleClassTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="beforeMethod" is-config="true" duration-ms="21327" started-at="2016-09-15T14:46:01Z" finished-at="2016-09-15T14:46:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-      </class> <!-- com.sample.selenium.test.SamsungGelexyJ7 -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="test1" duration-ms="405" started-at="2016-09-15T14:46:23Z" finished-at="2016-09-15T14:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="AfterMethod" is-config="true" duration-ms="445" started-at="2016-09-15T14:46:23Z" finished-at="2016-09-15T14:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="beforeMethod" is-config="true" duration-ms="15921" started-at="2016-09-15T14:46:23Z" finished-at="2016-09-15T14:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2(org.testng.ITestContext)[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="test2" duration-ms="250" started-at="2016-09-15T14:46:39Z" finished-at="2016-09-15T14:46:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@264f218]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="AfterMethod" is-config="true" duration-ms="490" started-at="2016-09-15T14:46:40Z" finished-at="2016-09-15T14:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="beforeMethod" is-config="true" duration-ms="15108" started-at="2016-09-15T14:46:40Z" finished-at="2016-09-15T14:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="test3" duration-ms="258" started-at="2016-09-15T14:46:55Z" description="Verify Page title" finished-at="2016-09-15T14:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.sample.selenium.test.SampleClassTest@71423665]" name="AfterMethod" is-config="true" duration-ms="448" started-at="2016-09-15T14:46:55Z" finished-at="2016-09-15T14:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- com.sample.selenium.test.SampleClassTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
