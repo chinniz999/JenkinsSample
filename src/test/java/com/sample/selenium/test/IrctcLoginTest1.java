@@ -1,7 +1,12 @@
 package com.sample.selenium.test;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 //import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -12,8 +17,7 @@ import com.sample.selenium.pages.IrctcUserHomePage;
 import com.sample.selenium.utility.TestBase;
 
 public class IrctcLoginTest1 extends TestBase {
-	private static final String SBROWSER = null;
-	private static final String IRCTCURL = null;
+	
 	// WebDriver driver = new FirefoxDriver();
 	WebDriver driver;
 	private IrctcLoginPage objIrctcLogin;
@@ -38,6 +42,19 @@ public class IrctcLoginTest1 extends TestBase {
 		// Assert.assertTrue(text.getUserHomepageUserName().toLowerCase().contains(loginPageTitle));
 	}
 
+	@Test
+	public void toolTip()
+	{
+		driver.findElement(By.id("originName")).getAttribute("value");
+		List<WebElement> a=driver.findElements(By.id("originName"));
+		a.size();
+		String a1="testing";
+		JavascriptExecutor executor= (JavascriptExecutor)driver;
+		executor.executeScript("document.getElementById("+a1+")"+".value="+"");
+		
+		
+	}
+	
 	@BeforeTest
 	public void beforeTest() {
 		driver=initalizeBrowser(SBROWSER);
